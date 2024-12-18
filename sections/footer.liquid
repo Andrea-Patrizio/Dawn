@@ -328,7 +328,7 @@
         <small class="copyright__content"
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </small>
-        <small class="copyright__content">P. IVA 02396630358</small>
+        <small class="copyright__content">{{ section.settings.cf_piva }}</small>
         {%- if section.settings.show_policy -%}
           <ul class="policies list-unstyled">
             {%- for policy in shop.policies -%}
@@ -559,6 +559,16 @@
       "id": "payment_enable",
       "default": true,
       "label": "t:sections.footer.settings.payment_enable.label"
+    },
+    {
+      "type": "header",
+      "content": "Codice fiscale o partita iva"
+    },
+    {
+      "type": "text",
+      "id": "cf_piva",
+      "default": "P. Iva XXXXXXXXXXX",
+      "label": "Partita IVA o Codice Fiscale"
     },
     {
       "type": "header",
