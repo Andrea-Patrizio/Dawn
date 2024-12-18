@@ -105,6 +105,13 @@
     "collection_list_text_QLjtJw": {
       "type": "collection-list-text",
       "blocks": {
+        "featured_collection_Qfr4Te": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ampoule",
+            "color_scheme": "scheme-1"
+          }
+        },
         "featured_collection_FdxXGA": {
           "type": "featured_collection",
           "settings": {
@@ -170,6 +177,7 @@
         }
       },
       "block_order": [
+        "featured_collection_Qfr4Te",
         "featured_collection_FdxXGA",
         "featured_collection_EL8nAH",
         "featured_collection_46qPMa",
